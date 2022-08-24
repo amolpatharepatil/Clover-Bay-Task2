@@ -11,10 +11,12 @@ def getOutput(data):
 
     if sz == 1:
         ans = data['input1']
+        return ans
     elif sz == 2:
         ans = ans + data['input2'][::-1]
         ans = ans + ', '
         ans = ans + data['input1'][::-1]
+        return ans
     else:
         if sz % 2 == 0:
             itr = sz
